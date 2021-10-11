@@ -18,7 +18,7 @@ mongoose.connect(process.env.MONGO_URL, {useNewUrlParser: true, useUnifiedTopolo
 //middleware
 app.use(express.json());
 app.use(helmet());
-app.use(morgan("common"));
+// app.use(morgan("common"));
 
 app.use("/api/users" , usersRoute);
 app.use("/api/auth" , authRoute);
